@@ -11,14 +11,25 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/newpic"/>
-        <TextView
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="nHub"
+        android:id="@+id/pagetitle"
         android:textColor="@android:color/black"
-        android:fontFamily="casual"
+        android:fontFamily="monospace"
         android:gravity="center"
         android:textSize="45sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pagetitle"
+        android:layout_margin="5dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="monospace"
+        android:text="ALC JOS meet up. Raising java android greats 💪"/>
+
     <ViewFlipper
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:fontFamily="monospace"
             android:drawableStart="@mipmap/location"
             android:drawableLeft="@mipmap/location"
             android:textColor="@android:color/black"
@@ -49,6 +61,7 @@
             android:text="www.nhubnigeria.com"
             android:textColor="@android:color/black"
             android:textSize="20sp"
+            android:fontFamily="monospace"
             android:drawableStart="@mipmap/website"
             android:drawableLeft="@mipmap/website"/>
     </ViewFlipper>
