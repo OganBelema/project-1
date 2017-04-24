@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">NHub</string>
+    <string name="motto">ALC JOS meet up. Raising java android greats 💪</string>
+    <string name="head">nHub</string>
+    <string name="address">3rd Floor, TAEN Business Complex, Opposite former Nitel Office, Yakubu, Gowon Way, 930001, Jos</string>
+    <string name="phone">07031285559</string>
+    <string name="web">www.nhubnigeria.com</string>
 </resources>
