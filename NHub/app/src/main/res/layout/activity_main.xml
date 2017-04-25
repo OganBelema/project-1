@@ -1,75 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.ogan.nhub.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/newpic"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/head"
-        android:id="@+id/pagetitle"
-        android:textColor="@android:color/black"
-        android:fontFamily="casual"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textSize="45sp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/pagetitle"
-        android:layout_margin="10dp"
-        android:textSize="25sp"
-        android:textColor="@android:color/black"
-        android:fontFamily="casual"
-        android:textStyle="bold"
-        android:text="@string/motto"/>
+        android:layout_height="100dp"
+        android:src="@drawable/nhub11"/>
 
-    <ViewFlipper
-        android:layout_width="match_parent"
+    <FrameLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:autoStart="true"
-        android:flipInterval="4000">
-        <TextView
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+        <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:fontFamily="casual"
-            android:textStyle="bold"
-            android:drawableStart="@mipmap/location"
-            android:drawableLeft="@mipmap/location"
-            android:textColor="@android:color/black"
-            android:text="@string/address"
-           />
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/newpic"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/phone"
-            android:textColor="@android:color/black"
-            android:fontFamily="casual"
-            android:textSize="20sp"
-            android:drawableStart="@mipmap/phone"
-            android:drawableLeft="@mipmap/phone"/>
-        <TextView
+            style="@style/textStyle"
+            android:text="@string/motto"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@android:color/white"
+        android:elevation="4dp">
+        <ViewFlipper
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/web"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:fontFamily="casual"
-            android:drawableStart="@mipmap/website"
-            android:drawableLeft="@mipmap/website"/>
-    </ViewFlipper>
+            android:autoStart="true"
+            android:flipInterval="4000">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/ic_location"
+                android:drawableLeft="@mipmap/ic_location"
+                style="@style/textStyle"
+                android:text="@string/address"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/phone"
+                style="@style/textStyle"
+                android:drawableStart="@mipmap/ic_phone"
+                android:drawableLeft="@mipmap/ic_phone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/web"
+                style="@style/textStyle"
+                android:drawableStart="@mipmap/ic_website"
+                android:drawableLeft="@mipmap/ic_website"/>
+        </ViewFlipper>
 
+    </FrameLayout>
 
-
-</RelativeLayout>
+</LinearLayout>
