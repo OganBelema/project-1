@@ -5,21 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ddd"
     tools:context="com.example.ogan.nhub.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_weight="1"
         android:src="@drawable/nhub11"/>
 
     <FrameLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:background="@android:color/white"
         android:elevation="4dp">
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="200dp"
             android:scaleType="centerCrop"
             android:src="@drawable/newpic"/>
@@ -28,6 +30,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_margin="5dp"
         android:background="@android:color/white"
         android:elevation="4dp">
@@ -41,6 +44,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:layout_margin="5dp"
         android:background="@android:color/white"
         android:elevation="4dp">
@@ -52,8 +56,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableStart="@mipmap/ic_location"
-                android:drawableLeft="@mipmap/ic_location"
+                android:drawableTop="@mipmap/ic_location"
                 style="@style/textStyle"
                 android:text="@string/address"
                 />
@@ -61,16 +64,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/phone"
+                android:textAlignment="center"
                 style="@style/textStyle"
-                android:drawableStart="@mipmap/ic_phone"
-                android:drawableLeft="@mipmap/ic_phone"/>
+                android:drawableTop="@mipmap/ic_phone"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/web"
+                android:textAlignment="center"
                 style="@style/textStyle"
-                android:drawableStart="@mipmap/ic_website"
-                android:drawableLeft="@mipmap/ic_website"/>
+                android:drawableTop="@mipmap/ic_website"/>
         </ViewFlipper>
 
     </FrameLayout>
